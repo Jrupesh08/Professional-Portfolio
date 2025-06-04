@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna-Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden font-Poppins leading-6 dark:bg-darkTheme dark:text-white">
+<div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+    <img src="  " alt="">
+</div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50">
+        <img src="./Images/logo.png" alt="logo" class="w-28  mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
+          bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent">
+
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+        <button onclick="toggleTheme()">
+            <img src="./Images/moon2.webp" alt="" class="w-6 dark:hidden">
+            <img src="./Images/sun2.png" alt="" class="w-6 hidden dark:block">
+        </button>
+
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-1 border border-gray-500
+             rounded-full ml-4 dark:border-white/50">Contact
+                <img src="./Images/contact2.png" alt="" class="w-7 dark:hidden">
+                <img src="./Images/contactwhite.png" alt="" class="w-4 hidden dark:block">
+
+            </a>
+<button class="block md:hidden ml-3" onclick="openMenu()">
+    <img src="./Images/menu.ong.webp" alt="" class="w-9 dark:hidden">
+    <img src="./Images/menuwhite.png" alt="" class="w-5 hidden dark:block">
+</button>
+
+        </div>
+
+        <!-----moblie menu----->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen
+         bg-rose-50 transition duration-500 dark:bg-[#2a004a] dark:text-white">
+
+           <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./Images/cross2.webp" alt="" class="w-5 cursor-pointer dark:hidden">
+            <img src="./Images/crosswhite.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+        </div>
+           
+            <li><a href="#top"onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About </a></li>
+            <li><a href="#achievement" onclick="closeMenu()">Achievement</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+
+        </ul>
+
+        
+    </nav>
+<!------header-->
+
+
+<div  class="w-11/12 text-center mx-auto h-screen flex flex-col items-center justify-center ">
+    <img src="./Images/pic1.jpg" alt="" class="rounded-full w-32 mt-20">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Playfair">
+        Hello! <br> I'm Krishna Prasad Devkota <img src="./Images/hello.webp" alt="" class="w-6"></h3>
+    <h1 class="text-2xl sm:text-6xl lg:text-[40px] font-Outfit">Area Sales Manager, Haldiram</h1>
+    <h2 class="text-1xl sm:text-2xl">Provience 6 & 7</h2>
+    <p class=" max-w-2xl mx-auto ">"With a strong 10+ year marketing background, I have a deep understanding of market 
+        dynamics, allowing me to strategize effectively and lead high-performing teams to success."</p>
+<div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+    <a href="#contact"
+     class="px-10 py-1 border rounded-full bg-gradient-to-r
+     from-[#b820e6] to-[#da7d20] text-wrap flex items-center gap-2">contact me
+      <img src="./Images/right.png" alt="" class="w-5"></a>
+
+      <a href="./Images/Resume Krishna Pd. Devkota.docx" download
+     class="px-10 py-1 border rounded-full border-gray-500 
+     bg-white text-wrap flex items-center gap-2 dark:text-black">Resume
+
+      <img src="./Images/download.webp" alt="" class="w-5"></a>
+</div> 
+</div>
+
+
+
+<!-------------about section-------------->
+<div id="about" class=" w-full px-[12%] py-10 scroll-mt-20">
+    
+    <h2 class="text-center text-5xl font-Playfair">About Me</h2>   
+
+<div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+    <div class="max-w-max mx-auto relative   ">
+        <img src="./Images/mypic1.jpg" alt="" class="w-64 sm:w-80  rounded-3xl max-w-none">
+
+      <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/4
+      shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+      <img src="./Images/roundlogopic.png " alt="" class=" rounded-full animate-spin_slow">
+
+      </div>
+
+    </div>
+    <div class="flex-1"> 
+        <p class="mb-10 max-w-2xl "> I am a goal-driven marketing professional with a diverse background in sales and marketing. 
+            Starting as a Sales Officer, I advanced to Marketing Supervisor and Assistant Sales Manager roles,
+            each experience sharpening my strategic and leadership skills.
+            Now, as a Area Sales Manager,<br>
+             I leverage my expertise to drive growth and achieve business objectives.
+
+</p>
+<ul class=" grid-cols-3 sm:grid-cols-3 gap-6 max-w-2xl ">
+
+    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 
+    duration-500 hover:shadow-black
+     dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+
+        <img src="./Images/experience.png" alt="" class="w-7 mt-3">
+        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Worked as</h3>
+        <p class="text-gray-600 text-sm dark:text-white/80">Asst Accountant, DSR, marketing, Asst manager, TSI, Sales officer</p>
+    </li>
+
+
+    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 
+    duration-500 hover:shadow-black 
+    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+
+        <img src="./Images/student.png" alt="" class="w-7 mt-3 dark:hidden">
+        <img src="./Images/education2.png" alt="" class="w-7 mt-3 hidden dark:block ">
+
+        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+        <p class="text-gray-600 text-sm dark:text-white/80">Bachelor in Business Studies, Tribhuvan University</p>
+        <p class="text-gray-600 text-sm dark:text-white/80">Master in Business Studies, Tribhuvan University</p>
+    </li>
+
+
+
+    
+    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 
+    duration-500 hover:shadow-black
+    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+        <img src="./Images/workwith.png" alt="" class="w-10 mt-3">
+        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Worked with</h3>
+        <p class="text-gray-600 text-sm dark:text-white/80">Pranshu Enterprises, Pokhara <br>Tridevi Marketing pvt. Ltd, Pokhara <br>
+            Image Saving & credit co-operative Pvt. Ltd, Pokhara<br>
+             Laxmi Bank Ltd, Pokhara <br>Patanjali Ayurved Pvt. Ltd , Prasauni-9 , Bara,(Province 4 )<br>
+            United Distributors Nepal Pvt. Ltd, (Britannia),Thapathali- KTM                                   </p>
+    </li>
+</ul>
+
+
+
+    </div>
+</div>
+</div>
+
+
+<!-----achievement section-->
+<div id="achievement" class="w-full px-[12%] py-10"scroll-mt-20>
+    <h2 class="text-center text-5xl font-Playfair">My Achievement</h2>
+    <p class=" text-center max-w-2xl mx-auto mt-5 mb-12">I accomplished marketing professional recognized for outstanding performance in the field.
+         During my marketing fieldwork,
+         I received prestigious awards such as "Salesperson of the Year", "Employee of the Year" and so on. <br>
+         These accolades reflect my exceptional ability to drive sales, execute successful campaigns, and consistently exceed targets. 
+        With a proven track record of excellence, 
+        I will continue to set high standards in the marketing industry.</p>
+
+
+
+        <div class="grid grid-cols-auto gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 
+            dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+                <img src="./Images/acheivement1.jpg" alt="" class="w-80">
+            <p class="text-lg my-4 text-gray-700 dark:text-white/80">Best sales Man of the year 2020 </p>
+             </div>
+
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+            dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+                <img src="./Images/acheive2.JPG" alt="" class="w-80">
+            <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Topper of the year   </p>
+           </div>
+
+           
+        <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/achieve0.JPG" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80">Annual meeting 2019 </p>
+         </div>
+
+
+     
+
+
+               <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+            dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+                <img src="./Images/acheive3.jpg" alt="" class="w-80">
+            <p class="text-lg my-4 text-gray-700 dark:text-white/80">Janapriya college 25Th anniversary   </p>
+           </div>
+
+           
+           <div class="border border-gray-400 rounded-lg px-8 py-12
+           hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+           dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+               <img src="./Images/achieve4.JPG" alt="" class="w-80">
+           <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Annual general meeting 2020  </p>
+          </div>
+
+          
+          <div class="border border-gray-400 rounded-lg px-8 py-12
+          hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+          dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+              <img src="./Images/award.jpg" alt="" class="w-80">
+          <p class="text-lg my-4 text-gray-700 dark:text-white/80"> During meeting 2021</p>
+         </div>
+
+
+         
+         <div class="border border-gray-400 rounded-lg px-8 py-12
+         hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+         dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+             <img src="./Images/pic1.jpg" alt="" class="w-80">
+         <p class="text-lg my-4 text-gray-700 dark:text-white/80">Annual general meeting, 2022</p>
+        </div>
+
+       
+
+        
+        <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/tour.jpg" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80">All staff gathering </p> 
+       </div>
+
+       
+       <div class="border border-gray-400 rounded-lg px-8 py-12
+       hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+       dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+           <img src="./Images/tour2.JPG" alt="" class="w-80">
+         <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Thailand Tour 2023</p>
+      </div>
+
+       
+      <div class="border border-gray-400 rounded-lg px-8 py-12
+      hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+      dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+      <img src="./Images/achieve.jpg" alt="" class="w-80">
+      <p class="text-lg my-4 text-gray-700 dark:text-white/80"> During Field Visit in himalayan region  </p>
+     </div>
+
+      
+     <div class="border border-gray-400 rounded-lg px-8 py-12
+     hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+     dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+     <img src="./Images/tour3.JPG" alt="" class="w-80">
+     <p class="text-lg my-4 text-gray-700 dark:text-white/80">Pattaya city, Thailand</p>
+    </div>
+           
+</div>
+</div>
+
+
+
+<!-----my Work-->
+<div id="work" class="w-full px-[12%] py-10"scroll-mt-20>
+    <h2 class="text-center text-5xl font-Playfair">My works</h2>
+    <p class="text-center">What My Clients Say About Me!</p>
+    
+    <div class="grid grid-cols-auto gap-6 my-10">
+        <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/testimonial1.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80">Testimonial</p>
+         </div>
+
+         
+         <div class="border border-gray-400 rounded-lg px-8 py-12
+         hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+         dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+             <img src="./Images/testimonial2.png" alt="" class="w-80">
+         <p class="text-lg my-4 text-gray-700 dark:text-white/80">Testimonial </p>
+        </div>
+
+
+        
+        <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/testimonial3.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Testimonial  </p>
+       </div>
+
+       <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/testimonial4.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Testimonial  </p>
+       </div>
+
+       <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/Testimonial5.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Testimonial  </p>
+       </div>
+
+       <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/Testimonial6.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80">Testimonial  </p>
+       </div>
+
+       <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/Testimonial7.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80"> Testimonial   </p>
+       </div>
+
+       <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+        dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" >
+            <img src="./Images/Testimonial8.png" alt="" class="w-80">
+        <p class="text-lg my-4 text-gray-700 dark:text-white/80">Testimonial   </p>
+       </div>
+
+       
+      
+    </div>
+
+
+
+
+<!-------contact-->
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('')] bg-no-repeat bg-[length:90%_auto]
+bg-center border-gray-400">
+<h4 class=" text-center mb-2 text-lg font-Playfair">Connect with me</h4>
+    <h2 class="text-center text-4xl">Get in touch</h2>
+    
+    <p class=" text-center max-w-2xl mx-auto mt-5 mb-12 font-Playfair">hello you guys can contact me through this form </p>
+
+
+<form method="post" action=" https://api.web3forms.com/submit"  class="max-w-2xl mx-auto dark:text-black " >
+
+    <input type="hidden" name="access_key" value="7b4078b6-9e8c-4d51-909f-330e39205f8e">
+
+
+    <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+       <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 
+    rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 dark:text-white" required name="name">
+
+    <input type="email" placeholder="enter your valid email with '@' " class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 
+    rounded-md bg-white   dark:bg-darkHover/30 dark:border-white/90 dark:text-white" required name="email">
+</div>
+
+<textarea placeholder="enter message here "  rows="6" class="w-full p-4 outline-none border-[0.5px] border-gray-400 
+rounded-md bg-white mb-6  dark:bg-darkHover/30 dark:border-white/90 dark:text-white" required name="message"> 
+          </textarea>
+          <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-orange-400/100 text-white 
+          rounded-full mx-auto hover:bg-orange-600 duration-500">Submit now
+            <img src="./Images/right.png" alt="" class="w-4">
+          </button>
+    </form>
+</div>
+
+
+<!----Footer-->
+<div class="mt-20">
+<div class="text-center">
+    <img src="./Images/logo.png" alt="" class="w-36 mx-auto mb-2">
+    <div class="w-max flex items-center gap-2 mx-auto"> 
+       <img src="./Images/email.webp" alt="" class="w-6 dark:hidden">
+       <img src="./Images/email2 (2).png" alt="" class="w-6 hidden dark:block">
+        kdevkota17@gmail.com
+        </div>
+</div>
+<div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+    <p>© 2024 Krishna Devkota. All Rights Reserved.</p>
+    <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li><a href="https://www.facebook.com/profile.php?id=100076633568544&mibextid=ZbWKwL" target="_blank"> 
+            <img src="./Images/Facebooklogo.png" alt="" class="w-6"></a></li>
+            <li><a href="https://www.instagram.com/kiss_na_devkota1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"> 
+                <img src="./Images/Instagram.png" alt="" class="w-6"></a></li>
+
+                <li><a href="https://twitter.com/krishna41420417?t=_4RrZeOZyJXs0ZWfabQrqw&s=09" target="_blank"> 
+                    <img src="./Images/twitter.png" alt="" class="w-8"></a></li>
+                
+            
+        
+    </ul>
+
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
